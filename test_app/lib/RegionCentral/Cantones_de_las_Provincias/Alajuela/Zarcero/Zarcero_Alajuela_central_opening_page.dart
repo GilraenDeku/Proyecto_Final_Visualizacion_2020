@@ -12,7 +12,7 @@ import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcer
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Guadalupe/Guadalupe_Zarcero_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Laguna/Laguna_Zarcero_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Palmira/Palmira_Zarcero_Alajuela_StoryTelling.dart';
-import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Tapesco/Tapezco_Zarcero_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Tapesco/Tapesco_Zarcero_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Zapote/Zapote_Zarcero_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Zarcero/Zarcero/Zarcero_Zarcero_Alajuela_StoryTelling.dart';
 import 'Zarcero_Alajuela_StoryTelling.dart';
