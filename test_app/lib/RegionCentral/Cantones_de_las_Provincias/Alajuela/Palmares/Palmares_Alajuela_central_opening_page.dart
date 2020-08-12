@@ -8,6 +8,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Buenos_Aires/Buenos_Aires_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Candelaria/Candelaria_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Esquipulas/Esquipulas_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/La_Granja/La_Granja_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Palmares/Palmares_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Zaragoza/Zaragoza_Palmares_Alajuela_StoryTelling.dart';
 import 'Palmares_Alajuela_Storytelling.dart';
 
 class regionSocialEconomicaCentralPalmaresAlajuela extends StatelessWidget {
@@ -32,85 +38,67 @@ class regionSocialEconomicaCentralPalmaresAlajuela extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Buenos Aires', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralBuenosAiresPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingBuenosAiresPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Candelaria', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralCandelariaPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingCandelariaPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Esquipulas', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralEsquipulasPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingEsquipulasPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('La Granja', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralLaGranjaPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingLaGranjaPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Palmares', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralPalmaresPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingPalmaresPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Zaragoza', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralZaragozaPalmaresAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingZaragozaPalmaresAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
 
           ListTile(
