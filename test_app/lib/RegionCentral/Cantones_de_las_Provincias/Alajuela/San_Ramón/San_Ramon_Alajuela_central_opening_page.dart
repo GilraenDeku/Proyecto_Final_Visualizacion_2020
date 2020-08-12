@@ -7,6 +7,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Alfaro/Alfaro_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Angeles/Angeles_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Concepci%C3%B3n/Concepcion_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Piedades_Norte/Piedades_Norte_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Piedades_Sur/Piedades_Sur_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/San_Isidro/San_Isidro_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/San_Juan/San_Juan_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/San_Rafael/San_Rafael_San_Ramon_Alajuela_central_grafico.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/San_Ram%C3%B3n/San_Ramon_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Santiago/Santiago_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Volio/Volio_San_Ramon_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/San_Ram%C3%B3n/Zapotal/Zapotal_San_Ramon_Alajuela_StoryTelling.dart';
 import 'San_Ramon_Alajuela_Storytelling.dart';
 
 class regionSocialEconomicaCentralSanRamonAlajuela extends StatelessWidget {
@@ -31,183 +43,133 @@ class regionSocialEconomicaCentralSanRamonAlajuela extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Alfaro', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralAlfaroSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingAlfaroSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Ángeles', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralAngelesSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingAngelesSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Concepción', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralConcepcionSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingConcepcionSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Piedades Norte', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralPiedadesNorteSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingPiedadesNorteSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Piedades Sur', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralPiedadesSurSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingPiedadesSurSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Isidro', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSanIsidroSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanIsidroSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Juan', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSanJuanSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanJuanSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
-          ),
-          ListTile(
-            leading: Icon(FontAwesomeIcons.trello),
-            title: Text('San Lorenzo', style: TextStyle(fontSize: 25),
-            ),
-            /*
-            onTap: () => {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSanLorenzoSanRamonAlajuela.withSampleData()),
-              )
-            },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Rafael', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSanRafaelSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanRafaelSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Ramón', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanRamonSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Santiago', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralSantiagoSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSantiagoSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Volio', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralVolioSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingVolioSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Zapotal', style: TextStyle(fontSize: 25),
             ),
-            /*
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => GraficaRegionCentralZapotalSanRamonAlajuela.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingZapotalSanRamonAlajuela.withSampleData()),
               )
             },
-
-             */
           ),
 
           ListTile(
