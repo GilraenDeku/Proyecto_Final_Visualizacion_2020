@@ -1,19 +1,18 @@
-import 'dart:math';
-
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class GraficaRegionCentralRodriguezValverdeVegaAlajuela extends StatelessWidget {
-  List<charts.Series> centralList;
+
+class storytellingRodriguezValverdeVegaAlajuela extends StatelessWidget {
+  List<charts.Series> seriesList;
   final bool animate;
 
-  GraficaRegionCentralRodriguezValverdeVegaAlajuela(this.centralList, {this.animate});
+  storytellingRodriguezValverdeVegaAlajuela(this.seriesList, {this.animate});
 
   /// Creates a [BarChart] with sample data and no transition.
-  factory GraficaRegionCentralRodriguezValverdeVegaAlajuela.withSampleData() {
-    return new GraficaRegionCentralRodriguezValverdeVegaAlajuela(
-      _centralData(),
+  factory storytellingRodriguezValverdeVegaAlajuela.withSampleData() {
+    return new storytellingRodriguezValverdeVegaAlajuela(
+      _createSampleData(),
       // Disable animations for image tests.
       animate: true,
     );
@@ -21,118 +20,417 @@ class GraficaRegionCentralRodriguezValverdeVegaAlajuela extends StatelessWidget 
 
   @override
   Widget build(BuildContext context) {
+
+    Widget titleSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: Row(
+        children: [
+          Expanded(
+            /*1*/
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /*2*/
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Center(
+                    child: Text(
+                      'Distrito de Rodríguez',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Center(
+                    child: Text(
+                      'Cantón de Valverde Vega, Provincia de Alajuela, Región Central',
+                      style: TextStyle(
+                        color: Colors.grey[500],
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          /*3
+          Icon(
+            Icons.star,
+            color: Colors.red[500],
+          ),
+    */
+          //Text('1'),
+        ],
+      ),
+    );
+
+    /*
+    Widget breveResenaSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: Row(
+        children: [
+          Expanded(
+            /*1*/
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                /*2*/
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    'Breve Reseña Histórica',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                    'Alajuela es el cantón número 1 de la provincia de '
+                        'Alajuela, su cabecera es la ciudad de Alajuela. '
+                        'El eje principal del cantón es la ciudad de Alajuela,'
+                        ' la segunda ciudad más poblada del país después'
+                        ' de la capital nacional, San José. '
+                        'En Alajuela se encuentra el principal '
+                        'aeropuerto de Costa Rica, '
+                        'el Aeropuerto Internacional Juan Santamaría. '
+                        'Alajuela posee una economía basada en el '
+                        'comercio y los servicios. En lo agrícola, '
+                        'se produce café y caña de azúcar principalmente. '
+                        'También es un importante centro industrial con '
+                        'todas sus zonas francas',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'Distritos: Alajuela, San José, Carrizal, San Antonio, '
+                        'La Guácima, San Isidro, Sabanilla, San Rafael, '
+                        'Río Segundo, Desamparados, Turrúcares, Tambor,'
+                        ' La Garita.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+
+     */
+
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          _buildButtonColumn(color, Icons.find_in_page, 'MAPA'),
+          _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
+        ],
+      ),
+    );
+
+    Widget chartSection = Container(
+      height: 400,
+      width: 400,
+      padding: EdgeInsets.all(8.0),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Indicadores de tenencia de dispositivos de Tecnologías de '
+                  'Información y Comunicación (TIC)',
+              style: TextStyle(
+                  fontSize: 24.0, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 10.0),
+            Expanded(
+              child: new charts.PieChart(seriesList,
+                  animate: animate,
+                  // Configure the width of the pie slices to 60px. The remaining space in
+                  // the chart will be left as a hole in the center.
+                  //
+                  // [ArcLabelDecorator] will automatically position the label inside the
+                  // arc if the label will fit. If the label will not fit, it will draw
+                  // outside of the arc with a leader line. Labels can always display
+                  // inside or outside using [LabelPosition].
+                  //
+                  // Text style for inside / outside can be controlled independently by
+                  // setting [insideLabelStyleSpec] and [outsideLabelStyleSpec].
+                  //
+                  // Example configuring different styles for inside/outside:
+                  //       new charts.ArcLabelDecorator(
+                  //          insideLabelStyleSpec: new charts.TextStyleSpec(...),
+                  //          outsideLabelStyleSpec: new charts.TextStyleSpec(...)),
+                  defaultRenderer: new charts.ArcRendererConfig(
+                      arcWidth: 190,
+                      arcRendererDecorators: [new charts.ArcLabelDecorator()])),
+            ),
+          ],
+        ),
+      ),
+    );
+
+
+    Widget interpretacionCodigo= Container(
+      padding: const EdgeInsets.all(32),
+      child: Row(
+        children: [
+          Expanded(
+            /*1*/
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                /*2*/
+                Container(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Text(
+                    'Interpretación del Gráfico',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(height: 20),
+                /*
+                Text(
+                    'Las regiones socioeconómicas de Costa Rica '
+                        '(a menudo denominadas sólo como regiones funcionales) '
+                        'son una subdivisión político-económica en la que '
+                        'se ha delimitado este país centroamericano. Esta subdivisión '
+                        'fue realizada por Decreto Ejecutivo Nº 7944 '
+                        'del 26 de enero de 1978.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'Estas regiones son seis en total: Región Central, '
+                        'Región Chorotega, Región Pacífico Central, '
+                        'Región Brunca, Región Huetar Atlántica y '
+                        'Región Huetar Norte. Algunos nombres de '
+                        'región se derivan de las etnias precolombinas '
+                        'que habitaron en esas zonas geográficas. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+
+                 */
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+
+
+
     return MaterialApp(
         home: DefaultTabController(
             length: 1,
             child: Scaffold(
               appBar: AppBar(
                 backgroundColor: Color(0xff1976d2),
-                bottom: TabBar(indicatorColor: Color(0xff9962D0), tabs: [
-                  Tab(
-                    icon: Icon(FontAwesomeIcons.home),
-                  ),
-                ]),
-                title: Text('Región Central Distrito Rodríguez'),
+                title: Text('Distrito de Rodríguez'),
               ),
-              body: TabBarView(
+              body: ListView(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Center(
-                      child: Column(
-                        children: <Widget>[
-                          Text(
-                            'Porcentaje de viviendas con dispositivos tecnológicos',
-                            style: TextStyle(
-                                fontSize: 24.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(height: 10.0),
-                          Expanded(
-                            child: new charts.PieChart(
-                                centralList,
-                                animate: animate,
-                                // Configure the width of the pie slices to 30px. The remaining space in
-                                // the chart will be left as a hole in the center. Adjust the start
-                                // angle and the arc length of the pie so it resembles a gauge.
-                                defaultRenderer: new charts.ArcRendererConfig(
-                                    arcWidth: 60, startAngle: 4 / 5 * pi, arcLength: 7 / 5 * pi),
-                                behaviors: [new charts.DatumLegend(
-
-                                  // Positions for "start" and "end" will be left and right respectively
-                                  // for widgets with a build context that has directionality ltr.
-                                  // For rtl, "start" and "end" will be right and left respectively.
-                                  // Since this example has directionality of ltr, the legend is
-                                  // positioned on the right side of the chart.
-                                  position: charts.BehaviorPosition.bottom,
-                                  // By default, if the position of the chart is on the left or right of
-                                  // the chart, [horizontalFirst] is set to false. This means that the
-                                  // legend entries will grow as new rows first instead of a new column.
-                                  horizontalFirst: false,
-
-                                  outsideJustification: charts.OutsideJustification.endDrawArea,
-
-                                  desiredMaxRows: 4,
-
-                                  // This defines the padding around each legend entry.
-                                  cellPadding: new EdgeInsets.only(right: 4.0, bottom: 4.0),
-                                  // Set show measures to true to display measures in series legend,
-                                  // when the datum is selected.
-                                  showMeasures: true,
-
-
-
-                                )]
-                            ),
-                          ),
-                          /*
-                          Text(
-                            'Edades',
-                            style: TextStyle(
-                                fontSize: 24.0, fontWeight: FontWeight.bold),
-                            textAlign: TextAlign.left,
-                          ),
-                          */
-                        ],
+                  Image.asset(
+                    'assets/valverdeVegaDistritos.jpeg',
+                    fit: BoxFit.cover,
+                  ),
+                  titleSection,
+                  buttonSection,
+                  //breveResenaSection,
+                  chartSection,
+                  FlatButton(
+                    onPressed: () {
+                      showGeneralDialog(
+                          context: context,
+                          barrierDismissible: true,
+                          barrierLabel: MaterialLocalizations.of(context)
+                              .modalBarrierDismissLabel,
+                          barrierColor: Colors.black45,
+                          transitionDuration: const Duration(milliseconds: 500),
+                          pageBuilder: (BuildContext buildContext,
+                              Animation animation,
+                              Animation secondaryAnimation) {
+                            return Center(
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                height: MediaQuery.of(context).size.height,
+                                padding: EdgeInsets.all(20),
+                                color: Colors.white,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/regionSocioeconomicaGrafrico.jpg',
+                                      width: 450,
+                                      height: 400,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          });
+                    },
+                    textColor: Colors.black,
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: <Color>[
+                            Color(0xFFD16BA5),
+                            Color(0xFF86A8E7),
+                            Color(0xFF5FFBF1),
+                          ],
+                        ),
                       ),
+                      padding: const EdgeInsets.all(10.0),
+                      child:
+                      const Text('Ver Información del Gráfico', style: TextStyle(fontSize: 20)),
                     ),
                   ),
+                  interpretacionCodigo,
+
+
                 ],
               ),
             )));
   }
 
+
+
   /// Create one series with sample hard coded data.
-  static List<charts.Series<centralData, String>> _centralData() {
-    final central = [
-      new centralData(76, Color(0xff086972), 'Radio'),
-      new centralData(62, Color(0xff01a9b4), 'Teléfono Fijo'),
-      new centralData(85, Color(0xff87dfd6), 'Celular'),
-      new centralData(15, Color(0xfffbfd8a), 'TV'),
-      new centralData(93, Color(0xff111d5e), 'TV sin Cable'),
-      new centralData(14, Color(0xffc70039), 'TV Cable/Satelital'),
-      new centralData(31, Color(0xfff37121), 'Computadora'),
-      new centralData(22, Color(0xffffbd69), 'Laptop'),
-      new centralData(27, Color(0xffe36387), 'Internet'),
+  static List<charts.Series<LinearSales, int>> _createSampleData() {
+    final data = [
+      new LinearSales(0, 76, Color(0xffD54062)),
+      new LinearSales(1, 62, Color(0xffFFA36C)),
+      new LinearSales(2, 85, Color(0xffEBDC87)),
+      new LinearSales(3, 15, Color(0xff799351)),
+      new LinearSales(4, 93, Color(0xff0F4C75)), //ff6538
+      new LinearSales(5, 14, Color(0xff00B7C2)),
+      new LinearSales(6, 31, Color(0xff8675A9)),
+      new LinearSales(7, 22, Color(0xffEEBB40)),
+      new LinearSales(8, 27, Color(0xff900C3F)),
     ];
 
     return [
-      new charts.Series<centralData, String>(
-        id: 'Central',
-        colorFn: (centralData centrals, _) =>
-            charts.ColorUtil.fromDartColor(centrals.colorvar),
-        domainFn: (centralData centrals, _) => centrals.test,
-        measureFn: (centralData centrals, _) => centrals.centrals,
-        data: central,
+      new charts.Series<LinearSales, int>(
+        id: 'Sales',
+        domainFn: (LinearSales sales, _) => sales.year,
+        measureFn: (LinearSales sales, _) => sales.sales,
+        colorFn: (LinearSales sales, _) =>
+            charts.ColorUtil.fromDartColor(sales.colorvar),
+        data: data,
+        // Set a label accessor to control the text of the arc label.
+        labelAccessorFn: (LinearSales row, _) => '${row.sales}',
       )
     ];
   }
+
+
+  Column _buildButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('https://www.hacienda.go.cr/docs/545cdbefc71e1_1212.pdf');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('https://www.hacienda.go.cr/docs/545cdbefc71e1_1212.pdf');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Column _buildMuniButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('http://www.munisarchi.go.cr/');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('http://www.munisarchi.go.cr/');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
 }
 
-/// Sample ordinal data type.
-class centralData {
-  final int centrals;
+/// Sample linear data type.
+class LinearSales {
+  final int year;
+  final int sales;
   final Color colorvar;
-  final String test;
 
-  centralData(this.centrals, this.colorvar, this.test);
+  LinearSales(this.year, this.sales, this.colorvar);
 }
