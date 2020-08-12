@@ -132,6 +132,7 @@ class storytellingAlajuelaAlajuela extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           _buildButtonColumn(color, Icons.find_in_page, 'WEB'),
+          _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
         ],
       ),
     );
@@ -373,6 +374,45 @@ class storytellingAlajuelaAlajuela extends StatelessWidget {
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
                   launch('https://es.wikipedia.org/wiki/Cant%C3%B3n_de_Alajuela');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Column _buildMuniButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('https://www.munialajuela.go.cr/');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('https://www.munialajuela.go.cr/');
                 }
             ),
           ),
