@@ -8,6 +8,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Alvarado/Capellades/Capellades_Alvarado_Cartago_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Alvarado/Cervantes/Cervantes_Alvarado_Cartago_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Alvarado/Pacayas/Pacayas_Alvarado_Cartago_Storytelling.dart';
 
 class regionSocialEconomicaCentralAlvaradoCartago extends StatelessWidget {
   @override
@@ -31,16 +34,34 @@ class regionSocialEconomicaCentralAlvaradoCartago extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Capellades', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCapelladesAlvaradoCartago.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Cervantes', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCervantesAlvaradoCartago.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Pacayas', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingPacayasAlvaradoCartago.withSampleData()),
+              )
+            },
           ),
 
           ListTile(
