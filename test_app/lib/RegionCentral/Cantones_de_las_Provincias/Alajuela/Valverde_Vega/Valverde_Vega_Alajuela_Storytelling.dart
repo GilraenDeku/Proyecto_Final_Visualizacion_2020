@@ -130,6 +130,7 @@ class storytellingValverdeVegaAlajuela extends StatelessWidget {
         children: [
           _buildButtonColumn(color, Icons.find_in_page, 'WEB'),
           _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
+          _buildMapaButtonColumn(color, Icons.find_in_page, 'MAPA'),
         ],
       ),
     );
@@ -410,6 +411,45 @@ class storytellingValverdeVegaAlajuela extends StatelessWidget {
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
                   launch('http://www.munisarchi.go.cr/');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Column _buildMapaButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('https://www.hacienda.go.cr/docs/545cdbefc71e1_1212.pdf');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('https://www.hacienda.go.cr/docs/545cdbefc71e1_1212.pdf');
                 }
             ),
           ),
