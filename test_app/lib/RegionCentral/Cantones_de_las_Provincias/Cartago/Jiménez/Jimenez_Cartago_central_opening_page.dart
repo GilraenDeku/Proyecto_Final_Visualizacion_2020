@@ -8,6 +8,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Jim%C3%A9nez/Jimenez_Cartago_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Jim%C3%A9nez/Juan_Vi%C3%B1as/Juan_Vi%C3%B1as_Jimenez_Cartago_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Jim%C3%A9nez/Pejibaye/Pejibaye_Jimenez_Cartago_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Jim%C3%A9nez/Tucurrique/Tucurrique_Jimenez_Cartago_StoryTelling.dart';
 
 class regionSocialEconomicaCentralJimenezCartago extends StatelessWidget {
   @override
@@ -29,29 +33,48 @@ class regionSocialEconomicaCentralJimenezCartago extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.map),
-            title: Text('El Tejar', style: TextStyle(fontSize: 25),
+            title: Text('Juan Viñas', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingJuanVinasJimenezCartago.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Patio de Agua', style: TextStyle(fontSize: 25),
+            title: Text('Pejibaye', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingPejibayeJimenezCartago.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('San Isidro', style: TextStyle(fontSize: 25),
+            title: Text('Tucurrique', style: TextStyle(fontSize: 25),
             ),
-          ),
-          ListTile(
-            leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Tobosi', style: TextStyle(fontSize: 25),
-            ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingTucurriqueJimenezCartago.withSampleData()),
+              )
+            },
           ),
 
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingJimenezCartago.withSampleData()),
+              )
+            },
           ),
         ],
       ),
