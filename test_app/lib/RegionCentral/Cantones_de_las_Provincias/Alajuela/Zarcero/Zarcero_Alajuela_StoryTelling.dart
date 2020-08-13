@@ -128,6 +128,7 @@ class storytellingZarceroAlajuela extends StatelessWidget {
         children: [
           _buildButtonColumn(color, Icons.find_in_page, 'WEB'),
           _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
+          _buildMapaButtonColumn(color, Icons.find_in_page, 'MAPA'),
         ],
       ),
     );
@@ -415,6 +416,46 @@ class storytellingZarceroAlajuela extends StatelessWidget {
       ],
     );
   }
+
+  Column _buildMapaButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('https://www.hacienda.go.cr/docs/545cdbef894fb_1111.pdf');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('https://www.hacienda.go.cr/docs/545cdbef894fb_1111.pdf');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
 
 }
 
