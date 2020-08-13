@@ -133,6 +133,7 @@ class storytellingAlajuelaAlajuela extends StatelessWidget {
         children: [
           _buildButtonColumn(color, Icons.find_in_page, 'WEB'),
           _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
+          _buildMapaButtonColumn(color, Icons.find_in_page, 'MAPA'),
         ],
       ),
     );
@@ -413,6 +414,47 @@ class storytellingAlajuelaAlajuela extends StatelessWidget {
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
                   launch('https://www.munialajuela.go.cr/');
+                }
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Column _buildMapaButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+
+        GestureDetector(
+            child:
+            Icon(icon, color: color),
+            onTap: () {
+              // do what you need to do when "Click here" gets clicked
+              launch('https://www.hacienda.go.cr/docs/5536700fe03cb_'
+                  'alajuela%20canton%2001%20alajuela.pdf');
+            }
+        ),
+
+        Container(
+          margin: const EdgeInsets.only(top: 8),
+          child: Center(
+            child:
+            GestureDetector(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: color,
+                  ),
+                ),
+                onTap: () {
+                  // do what you need to do when "Click here" gets clicked
+                  launch('https://www.hacienda.go.cr/docs/5536700fe03cb_'
+                      'alajuela%20canton%2001%20alajuela.pdf');
                 }
             ),
           ),
