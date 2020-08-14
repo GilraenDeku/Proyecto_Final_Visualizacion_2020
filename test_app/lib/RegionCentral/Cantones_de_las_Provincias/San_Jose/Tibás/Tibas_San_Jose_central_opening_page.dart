@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Tibas_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralTibasSanJose extends StatelessWidget {
   @override
@@ -31,26 +32,56 @@ class regionSocialEconomicaCentralTibasSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Anselmo Llorente', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingAnselmoLlorenteTibasSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Cinco Esquinas', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCincoEsquinasTibasSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Colima', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingColimaTibasSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('León XIII', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingLeonXIIITibasSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Juan', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanJuanTibasSanJose.withSampleData()),
+              )
+            },
           ),
 
 
@@ -58,6 +89,12 @@ class regionSocialEconomicaCentralTibasSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingTibasSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
