@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Escaz%C3%BA/Escazu_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralEscazuSanJose extends StatelessWidget {
   @override
@@ -31,16 +32,34 @@ class regionSocialEconomicaCentralEscazuSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('San Antonio', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanAntonioEscazuSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Miguel', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanMiguelEscazuSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Rafael', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanRafaelEscazuSanJose.withSampleData()),
+              )
+            },
           ),
 
 
@@ -48,6 +67,12 @@ class regionSocialEconomicaCentralEscazuSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingEscazuSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
