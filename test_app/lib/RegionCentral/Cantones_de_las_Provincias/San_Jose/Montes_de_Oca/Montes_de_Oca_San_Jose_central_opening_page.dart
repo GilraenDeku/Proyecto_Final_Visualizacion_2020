@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/Montes_de_Oca_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralMontesdeOcaSanJose extends StatelessWidget {
   @override
@@ -31,21 +32,45 @@ class regionSocialEconomicaCentralMontesdeOcaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Mercedes', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingMercedesMontesdeOcaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Sabanilla', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSabanillaMontesdeOcaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Pedro', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanPedroMontesdeOcaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Rafael', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanRafaelMontesdeOcaSanJose.withSampleData()),
+              )
+            },
           ),
 
 
@@ -53,6 +78,12 @@ class regionSocialEconomicaCentralMontesdeOcaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingMontesdeOcaSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
