@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/Curridabat_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralCurridabatSanJose extends StatelessWidget {
   @override
@@ -31,27 +32,57 @@ class regionSocialEconomicaCentralCurridabatSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Curridabat', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCurridabatCurridabatSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Granadilla', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingGranadillaCurridabatSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Sánchez', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanchezCurridabatSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Tirrases', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingTirrasesCurridabatSanJose.withSampleData()),
+              )
+            },
           ),
 
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCurridabatSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
