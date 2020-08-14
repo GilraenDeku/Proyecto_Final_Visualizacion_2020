@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/Moravia_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralMoraviaSanJose extends StatelessWidget {
   @override
@@ -31,16 +32,34 @@ class regionSocialEconomicaCentralMoraviaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('La Trinidad', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingLaTrinidadMoraviaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Jerónimo', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanJeronimoMoraviaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Vicente', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanVicenteMoraviaSanJose.withSampleData()),
+              )
+            },
           ),
 
 
@@ -48,6 +67,12 @@ class regionSocialEconomicaCentralMoraviaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingMoraviaSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
