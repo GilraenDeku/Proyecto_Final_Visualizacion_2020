@@ -8,6 +8,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/San_Pablo/Rinc%C3%B3n_de_Sabanilla/Rincon_de_Sabanilla_San_Pablo_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/San_Pablo/San_Pablo/San_Pablo_San_Pablo_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/San_Pablo/storytellingSanPabloHeredia.dart';
 
 class regionSocialEconomicaCentralSanPabloHeredia extends StatelessWidget {
   @override
@@ -31,11 +34,23 @@ class regionSocialEconomicaCentralSanPabloHeredia extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Rincón de Sabanilla', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingRincondeSabanillaSanPabloHeredia.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Pablo', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanPabloSanPabloHeredia.withSampleData()),
+              )
+            },
           ),
 
 
@@ -43,6 +58,12 @@ class regionSocialEconomicaCentralSanPabloHeredia extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanPabloHeredia.withSampleData()),
+              )
+            },
           ),
         ],
       ),
