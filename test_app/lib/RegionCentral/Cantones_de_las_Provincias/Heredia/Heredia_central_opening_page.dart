@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/StoryTelling_Heredia.dart';
 import 'Barva/Barva_Heredia_central_opening_page.dart';
 import 'Belén/Belen_Heredia_central_opening_page.dart';
 import 'Flores/Flores_Heredia_central_opening_page.dart';
@@ -140,6 +141,12 @@ class regionSocialEconomicaCentralHeredia extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('StoryTelling de la Provincia', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingHeredia.withSampleData()),
+              )
+            },
           ),
         ],
       ),
