@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/Alajuelita_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralAlajuelitaSanJose extends StatelessWidget {
   @override
@@ -31,32 +32,68 @@ class regionSocialEconomicaCentralAlajuelitaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Alajuelita', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingAlajuelitaAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Concepción', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingConcepcionAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Antonio', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanAntonioAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Felipe', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanFelipeAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Josecito', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanJosecitoAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
 
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingAlajuelitaSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
