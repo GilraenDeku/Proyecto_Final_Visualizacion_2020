@@ -8,6 +8,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Flores/Llorente/Llorente_Flores_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Flores/San_Joaqu%C3%ADn/San_Joaquin_Flores_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Flores/San_Lorenzo/San_Lorenzo_Flores_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Flores/storytellingFloresHeredia.dart';
 
 class regionSocialEconomicaCentralFloresHeredia extends StatelessWidget {
   @override
@@ -31,16 +35,34 @@ class regionSocialEconomicaCentralFloresHeredia extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Llorente', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingLlorenteFloresHeredia.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Joaquín', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanJoaquinFloresHeredia.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('San Lorenzo', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanLorenzoFloresHeredia.withSampleData()),
+              )
+            },
           ),
 
 
@@ -48,6 +70,12 @@ class regionSocialEconomicaCentralFloresHeredia extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingFloresHeredia.withSampleData()),
+              )
+            },
           ),
         ],
       ),
