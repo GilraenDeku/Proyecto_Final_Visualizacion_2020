@@ -245,12 +245,12 @@ class storytellingHeredia extends StatelessWidget {
             child: Scaffold(
               appBar: AppBar(
                 backgroundColor: Color(0xff1976d2),
-                title: Text('Provincia de Cartago'),
+                title: Text('Provincia de Heredia'),
               ),
               body: ListView(
                 children: [
                   Image.asset(
-                    'assets/Cartago.jpg',
+                    'assets/Heredia.png',
                     fit: BoxFit.cover,
                   ),
                   titleSection,
@@ -321,15 +321,15 @@ class storytellingHeredia extends StatelessWidget {
   /// Create one series with sample hard coded data.
   static List<charts.Series<LinearSales, int>> _createSampleData() {
     final data = [
-      new LinearSales(0, 86, Color(0xffD54062)),
-      new LinearSales(1, 62, Color(0xffFFA36C)),
-      new LinearSales(2, 90, Color(0xffEBDC87)),
-      new LinearSales(3, 21, Color(0xff799351)),
-      new LinearSales(4, 94, Color(0xff0F4C75)), //ff6538
-      new LinearSales(5, 41, Color(0xff00B7C2)),
-      new LinearSales(6, 38, Color(0xff8675A9)),
-      new LinearSales(7, 27, Color(0xffEEBB40)),
-      new LinearSales(8, 35, Color(0xff900C3F)),
+      new LinearSales(0, 84, Color(0xffD54062)),
+      new LinearSales(1, 67, Color(0xffFFA36C)),
+      new LinearSales(2, 91, Color(0xffEBDC87)),
+      new LinearSales(3, 29, Color(0xff799351)),
+      new LinearSales(4, 91, Color(0xff0F4C75)), //ff6538
+      new LinearSales(5, 56, Color(0xff00B7C2)),
+      new LinearSales(6, 43, Color(0xff8675A9)),
+      new LinearSales(7, 37, Color(0xffEEBB40)),
+      new LinearSales(8, 48, Color(0xff900C3F)),
     ];
 
     return [
@@ -358,7 +358,7 @@ class storytellingHeredia extends StatelessWidget {
             Icon(icon, color: color),
             onTap: () {
               // do what you need to do when "Click here" gets clicked
-              launch('https://es.wikipedia.org/wiki/Provincia_de_Cartago');
+              launch('https://es.wikipedia.org/wiki/Provincia_de_Heredia');
             }
         ),
 
@@ -377,7 +377,7 @@ class storytellingHeredia extends StatelessWidget {
                 ),
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
-                  launch('https://es.wikipedia.org/wiki/Provincia_de_Cartago');
+                  launch('https://es.wikipedia.org/wiki/Provincia_de_Heredia');
                 }
             ),
           ),
