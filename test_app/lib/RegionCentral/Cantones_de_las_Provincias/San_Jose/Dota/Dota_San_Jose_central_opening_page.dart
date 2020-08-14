@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Dota/Dota_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralDotaSanJose extends StatelessWidget {
   @override
@@ -31,16 +32,34 @@ class regionSocialEconomicaCentralDotaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.map),
             title: Text('Copey', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCopeyDotaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Jardín', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingJardinDotaSanJose.withSampleData()),
+              )
+            },
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Santa María', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSantaMariaDotaSanJose.withSampleData()),
+              )
+            },
           ),
 
 
@@ -48,6 +67,12 @@ class regionSocialEconomicaCentralDotaSanJose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingDotaSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
