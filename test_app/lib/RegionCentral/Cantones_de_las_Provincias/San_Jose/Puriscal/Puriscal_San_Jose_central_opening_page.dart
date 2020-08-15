@@ -8,7 +8,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Barbacoas/Barbacoas_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Candelarita/Candelarita_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Chires/Chires_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Desamparaditos/Desamparaditos_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Grifo_Alto/Grifo_Alto_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Mercedes_Sur/Mercedes_Sur_Puriscal_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/San_Antonio/San_Antonio_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/San_Rafael/San_Rafael_Puriscal_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Santiago/Santiago_Puriscal_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralPuriscalSanJose extends StatelessWidget {
   @override
