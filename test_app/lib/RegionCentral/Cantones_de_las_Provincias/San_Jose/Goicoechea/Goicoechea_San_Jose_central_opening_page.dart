@@ -8,7 +8,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Calle_Blancos/Calle_Blancos_Goicoechea_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Guadalupe/Guadalupe_Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Ip%C3%ADs/Ipis_Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Mata_de_Pl%C3%A1tano/Mata_de_Platano_Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Purral/Purral_Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/Rancho_Redondo/Rancho_Redondo_Goicoechea_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Goicoechea/San_Francisco/San_Francisco_Goicoechea_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralGoicoecheaSanJose extends StatelessWidget {
   @override
