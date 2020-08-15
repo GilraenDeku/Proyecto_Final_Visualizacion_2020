@@ -8,7 +8,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Cuidad_Col%C3%B3n/Cuidad_Colon_Mora_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Guayabo/Guayabo_Mora_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Mora_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Picagres/Picagres_Mora_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Piedras_Negras/Piedras_Negras_Mora_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/Tabarcia/Tarbacia_Mora_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralMoraSanJose extends StatelessWidget {
   @override
@@ -52,17 +57,6 @@ class regionSocialEconomicaCentralMoraSanJose extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Jaris', style: TextStyle(fontSize: 25),
-            ),
-            onTap: () => {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => storytellingJarisMoraSanJose.withSampleData()),
-              )
-            },
-          ),
-          ListTile(
-            leading: Icon(FontAwesomeIcons.trello),
             title: Text('Picagres', style: TextStyle(fontSize: 25),
             ),
             onTap: () => {
@@ -80,17 +74,6 @@ class regionSocialEconomicaCentralMoraSanJose extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => storytellingPiedrasNegrasMoraSanJose.withSampleData()),
-              )
-            },
-          ),
-          ListTile(
-            leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Quitirrisí', style: TextStyle(fontSize: 25),
-            ),
-            onTap: () => {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => storytellingQuitirrisiMoraSanJose.withSampleData()),
               )
             },
           ),
