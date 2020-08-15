@@ -8,6 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/Cascajal/Cascajal_Vasquez_de_Colorado_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/Dulce_Nombre_de_Jes%C3%BAs/Dulce_Nombre_de_Jesus_Vasquez_de_Colorado_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/Patalillo/Patalillo_Vasquez_de_Colorado_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/San_Isidro/San_Isidro_Vasquez_de_Colorado_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/San_Rafael/San_Rafael_Vasquez_de_Colorado_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/V%C3%A1squez_de_Coronado/Vasquez_de_Coronado_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidget {
@@ -35,7 +40,7 @@ class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidg
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingCascajalVasquezdeCoronadoSanJose.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingCascajalVazquezdeCoronadoSanJose.withSampleData()),
               )
             },
           ),
@@ -46,7 +51,7 @@ class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidg
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingDulceNombredeJesusVasquezdeCoronadoSanJose.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingDulceNombredeJesusVazquezdeCoronadoSanJose.withSampleData()),
               )
             },
           ),
@@ -57,7 +62,7 @@ class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidg
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingPatalilloVasquezdeCoronadoSanJose.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingPatalilloVazquezdeCoronadoSanJose.withSampleData()),
               )
             },
           ),
@@ -68,7 +73,7 @@ class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidg
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingSanIsidroVasquezdeCoronadoSanJose.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanIsidroVazquezdeCoronadoSanJose.withSampleData()),
               )
             },
           ),
@@ -79,7 +84,7 @@ class regionSocialEconomicaCentralVazquezdeCoronadoSanJose extends StatelessWidg
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingSanRafaelVasquezdeCoronadoSanJose.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingSanRafaelVazquezdeCoronadoSanJose.withSampleData()),
               )
             },
           ),
