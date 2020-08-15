@@ -8,7 +8,20 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Damas/Damas_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Desamparados/Desamparados_Desamparados_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Frailes/Frailes_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Gravilias/Gravilias_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Los_Guido/Los_Guidos_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Patarr%C3%A1/Patarra_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/Rosario/Rosario_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Antonio/San_Antonio_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Crist%C3%B3bal/San_Cristobal_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Juan_de_Dios/San_Juan_de_Dios_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Miguel/San_Miguel_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Rafael_Abajo/San_Rafael_Abajo_Desamparados_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Desamparados/San_Rafael_Arriba/San_Rafael_Arriba_Desamparados_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralDesamparadosSanJose extends StatelessWidget {
   @override
