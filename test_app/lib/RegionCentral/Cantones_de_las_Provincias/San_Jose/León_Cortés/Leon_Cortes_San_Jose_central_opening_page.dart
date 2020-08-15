@@ -9,6 +9,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/Leon_Corte_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/Llano_Bonito/Llano_Bonito_Leon_Cortes_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/San_Andr%C3%A9s/San_Andres_Leon_Cortes_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/San_Antonio/San_Antonio_Leon_Cortes_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/San_Isidro/San_Isidro_Leon_Cortes_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/San_Pablo/San_Pablo_Leon_Cortes_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Le%C3%B3n_Cort%C3%A9s/Santa_Cruz/Santa_Cruz_Leon_Cortes_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralLeonCortesSanJose extends StatelessWidget {
   @override
