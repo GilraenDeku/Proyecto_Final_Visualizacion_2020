@@ -8,6 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Anselmo_Llorente/Anselmo_Llorente_Tibas_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Cinco_Esquinas/Cinco_Esquinas_Tibas_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Colima/Colima_Tibas_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Le%C3%B3n_XIII/Leon_XIII_Tibas_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/San_Juan/San_Juan_Tibas_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Tibas_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralTibasSanJose extends StatelessWidget {
