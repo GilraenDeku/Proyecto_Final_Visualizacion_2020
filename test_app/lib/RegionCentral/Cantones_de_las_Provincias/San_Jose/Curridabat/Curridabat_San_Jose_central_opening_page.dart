@@ -8,7 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/Curridabat/Curridabat_Curridabat_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/Curridabat_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/Granadilla/Granadilla_Curridabat_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/S%C3%A1nchez/Sanchez_Curridabat_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Curridabat/Tirrases/Tirrases_Curridabat_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralCurridabatSanJose extends StatelessWidget {
   @override
