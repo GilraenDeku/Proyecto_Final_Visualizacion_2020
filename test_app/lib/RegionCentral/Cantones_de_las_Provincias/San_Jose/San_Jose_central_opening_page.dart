@@ -21,6 +21,7 @@ import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Mora/M
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/Moravia_San_Jose_central_opening_page.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Puriscal/Puriscal_San_Jose_central_opening_page.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/San_Jose_San_Jose_central_opening_page.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Santa_Ana_San_Jose_central_opening_page.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tarraz%C3%BA/Tarrazu_San_Jose_central_opening_page.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tib%C3%A1s/Tibas_San_Jose_central_opening_page.dart';
@@ -247,6 +248,12 @@ class regionSocialEconomicaCentralSan_Jose extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('StoryTelling de la Provincia', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSanJose.withSampleData()),
+              )
+            },
           ),
         ],
       ),
