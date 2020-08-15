@@ -8,7 +8,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Carmen/Carmen_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Catedral/Catedral_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Hatillo/Hatillo_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Hospital/Hospital_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/La_Uruca/La_Uruca_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Mata_Redonda/Mata_Redonda_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Merced/Merced_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Pavas/Pavas_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/San_Francisco_de_Dos_R%C3%ADos/San_Francisco_de_Dos_Rios_San_Jose_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/San_Sebasti%C3%A1n/San_Sebastian_San_Jose_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/San_Jose/Zapote/Zapote_San_Jose_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralSanJoseSanJose extends StatelessWidget {
   @override
