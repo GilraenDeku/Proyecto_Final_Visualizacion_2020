@@ -8,7 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/Mercedes/Mercedes_Montes_de_Oca_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/Montes_de_Oca_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/Sabanilla/Sabanilla_Montes_de_Oca_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/San_Pedro/San_Pedro_Montes_de_Oca_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Montes_de_Oca/San_Rafael/San_Rafael_Montes_de_Oca_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralMontesdeOcaSanJose extends StatelessWidget {
   @override
