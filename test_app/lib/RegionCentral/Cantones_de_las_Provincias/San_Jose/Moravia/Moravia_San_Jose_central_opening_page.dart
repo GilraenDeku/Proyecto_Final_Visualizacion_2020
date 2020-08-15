@@ -8,7 +8,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/La_Trinidad/La_Trinidad_Moravia_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/Moravia_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/San_Jer%C3%B3nimo/San_Jer%C3%B3nimo_Moravia_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Moravia/San_Vicente/San_Vicente_Moravia_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralMoraviaSanJose extends StatelessWidget {
   @override
