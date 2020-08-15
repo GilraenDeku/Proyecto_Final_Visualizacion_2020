@@ -8,7 +8,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Dota/Copey/Copey_Dota_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Dota/Dota_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Dota/Jard%C3%ADn/Jardin_Dota_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Dota/Santa_Mar%C3%ADa/Santa_Maria_Dota_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralDotaSanJose extends StatelessWidget {
   @override
