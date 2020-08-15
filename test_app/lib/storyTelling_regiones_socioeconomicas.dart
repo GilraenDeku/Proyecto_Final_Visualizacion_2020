@@ -329,41 +329,6 @@ class storytellingRegionesSocioeconomicas extends StatelessWidget {
       new OrdinalSales('Otros', 1),
     ];
 
-    final BdesktopSalesData = [
-      new OrdinalSales('Teléfono', 18),
-      new OrdinalSales('Cable', 21),
-      new OrdinalSales('Móvil', 60),
-      new OrdinalSales('Otros', 1),
-    ];
-
-    final CdesktopSalesData = [
-      new OrdinalSales('Teléfono', 15),
-      new OrdinalSales('Cable', 18),
-      new OrdinalSales('Móvil', 66),
-      new OrdinalSales('Otros', 1),
-    ];
-
-    final DdesktopSalesData = [
-      new OrdinalSales('Teléfono', 15),
-      new OrdinalSales('Cable', 09),
-      new OrdinalSales('Móvil', 75),
-      new OrdinalSales('Otros', 1),
-    ];
-
-    final EdesktopSalesData = [
-      new OrdinalSales('Teléfono', 15),
-      new OrdinalSales('Cable', 17),
-      new OrdinalSales('Móvil', 68),
-      new OrdinalSales('Otros', 1),
-    ];
-
-    final FdesktopSalesData = [
-      new OrdinalSales('Teléfono', 11),
-      new OrdinalSales('Cable', 11),
-      new OrdinalSales('Móvil', 78),
-      new OrdinalSales('Otros', 1),
-    ];
-
     final mobileSalesData = [
       new OrdinalSales('Teléfono', 20),
       new OrdinalSales('Cable', 31),
@@ -378,41 +343,6 @@ class storytellingRegionesSocioeconomicas extends StatelessWidget {
           domainFn: (OrdinalSales sales, _) => sales.year,
           measureFn: (OrdinalSales sales, _) => sales.sales,
           data: AdesktopSalesData),
-
-      new charts.Series<OrdinalSales, String>(
-          id: 'Chorotega',
-          colorFn: (_, __) => charts.MaterialPalette.red.shadeDefault,
-          domainFn: (OrdinalSales sales, _) => sales.year,
-          measureFn: (OrdinalSales sales, _) => sales.sales,
-          data: BdesktopSalesData),
-
-      new charts.Series<OrdinalSales, String>(
-          id: 'Pacífico',
-          colorFn: (_, __) => charts.MaterialPalette.lime.shadeDefault,
-          domainFn: (OrdinalSales sales, _) => sales.year,
-          measureFn: (OrdinalSales sales, _) => sales.sales,
-          data: CdesktopSalesData),
-
-      new charts.Series<OrdinalSales, String>(
-          id: 'Brunca',
-          colorFn: (_, __) => charts.MaterialPalette.cyan.shadeDefault,
-          domainFn: (OrdinalSales sales, _) => sales.year,
-          measureFn: (OrdinalSales sales, _) => sales.sales,
-          data: DdesktopSalesData),
-
-      new charts.Series<OrdinalSales, String>(
-          id: 'H. Atlántica',
-          colorFn: (_, __) => charts.MaterialPalette.purple.shadeDefault,
-          domainFn: (OrdinalSales sales, _) => sales.year,
-          measureFn: (OrdinalSales sales, _) => sales.sales,
-          data: EdesktopSalesData),
-
-      new charts.Series<OrdinalSales, String>(
-          id: 'H. Norte',
-          colorFn: (_, __) => charts.MaterialPalette.yellow.shadeDefault,
-          domainFn: (OrdinalSales sales, _) => sales.year,
-          measureFn: (OrdinalSales sales, _) => sales.sales,
-          data: FdesktopSalesData),
 
       new charts.Series<OrdinalSales, String>(
           id: 'Totales',
