@@ -9,6 +9,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Escaz%C3%BA/Escazu_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Escaz%C3%BA/San_Antonio/San_Antonio_Escazu_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Escaz%C3%BA/San_Miguel/San_Miguel_Escazu_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Escaz%C3%BA/San_Rafael/San_Rafael_Escazu_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralEscazuSanJose extends StatelessWidget {
   @override
