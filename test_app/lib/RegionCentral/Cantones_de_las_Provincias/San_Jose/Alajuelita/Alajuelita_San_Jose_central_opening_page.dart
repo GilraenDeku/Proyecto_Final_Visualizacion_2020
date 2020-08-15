@@ -8,7 +8,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/Alajuelita/Alajuelita_Alajuelita_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/Alajuelita_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/Concepci%C3%B3n/Concepcion_Alajuelita_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/San_Antonio/San_Antonio_Alajuelita_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/San_Felipe/San_Felipe_Alajuelita_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Alajuelita/San_Josecito/San_Josecito_Alajuelita_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralAlajuelitaSanJose extends StatelessWidget {
   @override
