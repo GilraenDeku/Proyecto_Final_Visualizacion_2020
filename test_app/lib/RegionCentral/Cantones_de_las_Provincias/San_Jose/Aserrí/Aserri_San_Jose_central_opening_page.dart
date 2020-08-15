@@ -8,7 +8,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Aserr%C3%AD/Aserri_Aserri_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Legua/Legua_Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Monterrey/Monterrey_Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Salitrillos/Salitrillos_Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/San_Gabriel/San_Gabriel_Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Tarbaca/Tarbaca_Aserri_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Aserr%C3%AD/Vuelta_de_Jorco/Vuelta_de_Jorco_Aserri_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralAserriSanJose extends StatelessWidget {
   @override
