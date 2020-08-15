@@ -8,6 +8,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tarraz%C3%BA/San_Carlos/San_Carlos_Tarrazu_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tarraz%C3%BA/San_Lorenzo/San_Lorenzo_Tarrazu_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tarraz%C3%BA/San_Marcos/San_Marcos_Tarrazu_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Tarraz%C3%BA/Tarrazu_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralTarrazuSanJose extends StatelessWidget {
