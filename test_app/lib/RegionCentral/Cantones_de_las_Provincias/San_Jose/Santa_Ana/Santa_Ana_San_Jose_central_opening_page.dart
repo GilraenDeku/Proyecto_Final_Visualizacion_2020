@@ -8,7 +8,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Brasil/Brasil_Santa_Ana_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Piedades/Piedades_Santa_Ana_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Pozos/Pozos_Santa_Ana_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Salitral/Salitral_Santa_Ana_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Santa_Ana/Santa_Ana_Santa_Ana_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Santa_Ana_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Santa_Ana/Uruca/Uruca_Santa_Ana_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralSantaAnaSanJose extends StatelessWidget {
   @override
