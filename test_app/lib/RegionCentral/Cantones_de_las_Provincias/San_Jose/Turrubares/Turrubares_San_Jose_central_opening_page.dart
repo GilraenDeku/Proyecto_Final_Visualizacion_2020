@@ -8,6 +8,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/Carara/Carara_Turrubares_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/San_Juan_de_Mata/San_Juan_de_Mata_Turrubares_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/San_Luis/San_Luis_Turrubares_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/San_Pablo/San_Pablo_Turrubares_San_Jose_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/San_Pedro/San_Pedro_Turrubares_San_Jose_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/San_Jose/Turrubares/Turrubares_San_Jose_StoryTelling.dart';
 
 class regionSocialEconomicaCentralTurrubaresSanJose extends StatelessWidget {
