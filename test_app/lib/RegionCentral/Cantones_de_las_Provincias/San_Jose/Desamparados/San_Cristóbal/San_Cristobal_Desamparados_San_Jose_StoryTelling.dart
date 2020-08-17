@@ -222,7 +222,6 @@ class storytellingSanCristobalDesamparadosSanJose extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/DesamparadosDistritos.jpg',
-                    fit: BoxFit.cover,
                   ),
                   titleSection,
                   buttonSection,
@@ -251,10 +250,7 @@ class storytellingSanCristobalDesamparadosSanJose extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/SantaBarbaraCanton.png',
-                                      width: 450,
-                                      height: 400,
-                                      fit: BoxFit.cover,
+                                      'assets/InformacionGraficoSanJose.png',
                                     ),
                                   ],
                                 ),
