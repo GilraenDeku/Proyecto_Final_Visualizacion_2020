@@ -275,7 +275,7 @@ class storytellingSanMiguelSantoDomingoHeredia extends StatelessWidget {
               body: ListView(
                 children: [
                   Image.asset(
-                    'assets/InformacionGraficoSanJose.png',
+                    'assets/SantoDomingoDistritos.jpg',
                     fit: BoxFit.cover,
                   ),
                   titleSection,
@@ -306,9 +306,7 @@ class storytellingSanMiguelSantoDomingoHeredia extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/regionSocioeconomicaGrafrico.jpg',
-                                      width: 450,
-                                      height: 400,
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
