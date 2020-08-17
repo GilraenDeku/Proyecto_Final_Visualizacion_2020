@@ -221,7 +221,7 @@ class storytellingSanCristobalDesamparadosSanJose extends StatelessWidget {
               body: ListView(
                 children: [
                   Image.asset(
-                    'assets/InformacionGraficoSanJose.png',
+                    'assets/DesamparadosDistritos.jpg',
                     fit: BoxFit.cover,
                   ),
                   titleSection,
