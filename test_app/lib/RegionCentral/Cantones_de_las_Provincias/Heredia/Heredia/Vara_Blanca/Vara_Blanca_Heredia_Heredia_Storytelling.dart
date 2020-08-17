@@ -134,8 +134,8 @@ class storytellingVaraBlancaHerediaHeredia extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildButtonColumn(color, Icons.find_in_page, 'MAPA'),
           _buildMuniButtonColumn(color, Icons.find_in_page, 'MUNICIPALIDAD'),
+          _buildButtonColumn(color, Icons.find_in_page, 'MAPA'),
         ],
       ),
     );
@@ -205,30 +205,52 @@ class storytellingVaraBlancaHerediaHeredia extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                /*
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'En la actualidad vivimos en un mundo en donde cada vez '
+                        'el uso de la tecnología se hace más indispensable, '
+                        'no solo para entretenernos sino también para '
+                        'comunicarnos, informarnos y trabajar, es por eso '
+                        'que es fundamental comprender el nivel de acceso '
+                        'que tiene a la tecnología: como lo es el radio, '
+                        'teléfonos, computadoras, televisores y el internet,'
+                        ' para así analizar la brecha tecnológica que '
+                        'existe y lograr crear proyectos que abarquen más'
+                        ' a la población',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En el distrito de Vara Blanca se observa que el 72% de las '
+                        'casas cuentan con radio o equipos de sonido, el 51% con'
+                        ' línea de teléfono fija, 80% con teléfono celular, 12%'
+                        ' con pantalla de televisor, de este 12% el 84% de los '
+                        'televisores son convencionales y el 24% son con cable '
+                        'o satélite, el 17% tienen una computadora de escritorio,'
+                        ' 13% con una computadora portátil y el 18% de las casas'
+                        ' cuentan con acceso de internet.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
-
-                 */
+                SizedBox(height: 20),
+                Text(
+                    'Cabe destacar que, como en el caso de las pantallas'
+                        ' de televisor, varias de las casas cuentan con más'
+                        ' de un tipo de tecnología por lo cual los índices'
+                        ' son más altos. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, en el caso de este distrito el uso de '
+                        'tecnologías es muy reducido constando así '
+                        'mayoritariamente del uso de radios o equipos de sonido'
+                        ' y telefonía celular y fija siendo el teléfono celular '
+                        'la tecnología de mayor uso.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
               ],
             ),
           ),
@@ -280,9 +302,7 @@ class storytellingVaraBlancaHerediaHeredia extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/regionSocioeconomicaGrafrico.jpg',
-                                      width: 450,
-                                      height: 400,
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
