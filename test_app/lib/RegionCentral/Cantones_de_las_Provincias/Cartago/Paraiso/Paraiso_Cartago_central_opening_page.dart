@@ -25,7 +25,7 @@ class regionSocialEconomicaCentralParaisoCartago extends StatelessWidget {
           DrawerHeader(
             child: Center (
               child: Text(
-                'Distritos del Cantón de Paraiso',
+                'Distritos del Cantón de Paraíso',
                 style: TextStyle(color: Colors.white, fontSize: 25),
                 textAlign: TextAlign.center,
               ),
@@ -68,7 +68,7 @@ class regionSocialEconomicaCentralParaisoCartago extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Paraiso', style: TextStyle(fontSize: 25),
+            title: Text('Paraíso', style: TextStyle(fontSize: 25),
             ),
             onTap: () => {
               Navigator.push(
