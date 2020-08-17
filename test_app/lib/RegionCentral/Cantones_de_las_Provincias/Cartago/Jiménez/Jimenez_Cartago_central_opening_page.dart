@@ -23,7 +23,7 @@ class regionSocialEconomicaCentralJimenezCartago extends StatelessWidget {
           DrawerHeader(
             child: Center (
               child: Text(
-                'Distritos del Cantón de Jimenez',
+                'Distritos del Cantón de Jiménez',
                 style: TextStyle(color: Colors.white, fontSize: 25),
                 textAlign: TextAlign.center,
               ),
