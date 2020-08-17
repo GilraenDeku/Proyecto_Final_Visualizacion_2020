@@ -13,6 +13,7 @@ import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmar
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Esquipulas/Esquipulas_Palmares_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/La_Granja/La_Granja_Palmares_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Palmares/Palmares_Palmares_Alajuela_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Santiago/Santiago_Palmares_Alajuela_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Alajuela/Palmares/Zaragoza/Zaragoza_Palmares_Alajuela_StoryTelling.dart';
 import 'Palmares_Alajuela_Storytelling.dart';
 
@@ -89,6 +90,18 @@ class regionSocialEconomicaCentralPalmaresAlajuela extends StatelessWidget {
               )
             },
           ),
+          ListTile(
+            leading: Icon(FontAwesomeIcons.trello),
+            title: Text('Santiago', style: TextStyle(fontSize: 25),
+            ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingSantiagoPalmaresAlajuela.withSampleData()),
+              )
+            },
+          ),
+
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Zaragoza', style: TextStyle(fontSize: 25),
