@@ -8,6 +8,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/StoryTelling_Cartago.dart';
 import 'Alvarado/Alvarado_Cartago_central_opening_page.dart';
 import 'Cartago/Cartago_Cartago_central_opening_page.dart';
 import 'El_Guarco/El_Guarco_Cartago_central_opening_page.dart';
@@ -128,6 +129,12 @@ class regionSocialEconomicaCentralCartago extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('StoryTelling de la Provincia', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCartago.withSampleData()),
+              )
+            },
           ),
         ],
       ),
