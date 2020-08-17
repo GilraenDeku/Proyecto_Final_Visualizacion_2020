@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Agua_Caliente/Agua_Caliente_Cartago_Cartago_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Carmen/Carmen_Cartago_Cartago_StoryTelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Cartago_Cartago_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Corralillo/Corralillo_Cartago_Cartago_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Dulce_Nombre/Dulce_Nombre_Cartago_Cartago_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Cartago/Cartago/Guadalupe/Guadalupe_Cartago_Cartago_StoryTelling.dart';
@@ -164,6 +165,12 @@ class regionSocialEconomicaCentralCartagoCartago extends StatelessWidget {
             leading: Icon(FontAwesomeIcons.trello),
             title: Text('Storytelling del Cantón', style: TextStyle(fontSize: 25),
             ),
+            onTap: () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => storytellingCartagoCartago.withSampleData()),
+              )
+            },
           ),
         ],
       ),
