@@ -247,7 +247,7 @@ class storytellingSanchezCurridabatSanJose extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/SantaBarbaraCanton.png',
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
