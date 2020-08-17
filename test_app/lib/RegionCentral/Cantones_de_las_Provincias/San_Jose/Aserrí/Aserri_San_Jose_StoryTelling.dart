@@ -303,8 +303,6 @@ class storytellingAserriSanJose extends StatelessWidget {
                                   children: [
                                     Image.asset(
                                       'assets/InformacionGraficoSanJose.png',
-                                      width: 450,
-                                      height: 400,
                                       fit: BoxFit.cover,
                                     ),
                                   ],
