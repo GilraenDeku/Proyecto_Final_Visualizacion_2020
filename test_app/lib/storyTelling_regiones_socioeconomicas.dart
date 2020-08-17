@@ -212,26 +212,40 @@ class storytellingRegionesSocioeconomicas extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'El internet es una de las principales fuentes proveedoras '
+                        'de información en la actualidad para la población, por '
+                        'lo cual saber el nivel de acceso de internet que tiene'
+                        ' la población es fundamental para así lograr crear '
+                        'proyectos que abarquen a la mayor población posible.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En la región central se muestra los porcentajes de casas'
+                        ' que adquieren servicio de internet por esos medios: '
+                        'por teléfono fijo 25%, por cable 39%, por teléfono '
+                        'móvil 38% y por otros medios 1%',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'El total de las regiones del país adquieren los servicios'
+                        ' de internet: por teléfono fijo 20%, por cable 31%, '
+                        'por teléfono móvil 48% y por otros medios 1%',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, la región central es, en comparación con '
+                        'el resto del país, la que adquiere más servicio de '
+                        'internet por cable.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
               ],
             ),
           ),
@@ -259,57 +273,6 @@ class storytellingRegionesSocioeconomicas extends StatelessWidget {
                   buttonSection,
                   breveResenaSection,
                   chartSection,
-                  FlatButton(
-                    onPressed: () {
-                      showGeneralDialog(
-                          context: context,
-                          barrierDismissible: true,
-                          barrierLabel: MaterialLocalizations.of(context)
-                              .modalBarrierDismissLabel,
-                          barrierColor: Colors.black45,
-                          transitionDuration: const Duration(milliseconds: 500),
-                          pageBuilder: (BuildContext buildContext,
-                              Animation animation,
-                              Animation secondaryAnimation) {
-                            return Center(
-                              child: Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height,
-                                padding: EdgeInsets.all(20),
-                                color: Colors.white,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Image.asset(
-                                      'assets/regionSocioeconomicaGrafrico.jpg',
-                                      width: 450,
-                                      height: 400,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          });
-                    },
-                    textColor: Colors.black,
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: <Color>[
-                            Color(0xFFD16BA5),
-                            Color(0xFF86A8E7),
-                            Color(0xFF5FFBF1),
-                          ],
-                        ),
-                      ),
-                      padding: const EdgeInsets.all(10.0),
-                      child:
-                      const Text('Ver Información del Gráfico', style: TextStyle(fontSize: 20)),
-                    ),
-                  ),
                   interpretacionCodigo,
 
 
