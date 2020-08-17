@@ -12,6 +12,7 @@ import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/B
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Bel%C3%A9n/La_Asunci%C3%B3n/La_Asuncion_Belen_Heredia_Storytelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Bel%C3%A9n/La_Ribera/La_Ribera_Belen_Heredia_Storytelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Bel%C3%A9n/San_Antonio/San_Antonio_Belen_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Bel%C3%A9n/storytellingBelenHeredia.dart';
 
 class regionSocialEconomicaCentralBelenHeredia extends StatelessWidget {
   @override
@@ -73,7 +74,7 @@ class regionSocialEconomicaCentralBelenHeredia extends StatelessWidget {
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingBarvaHeredia.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingBelenHeredia.withSampleData()),
               )
             },
           ),
