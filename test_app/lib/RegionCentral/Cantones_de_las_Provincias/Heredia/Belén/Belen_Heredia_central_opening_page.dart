@@ -73,7 +73,7 @@ class regionSocialEconomicaCentralBelenHeredia extends StatelessWidget {
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingBelenHeredia.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingBarvaHeredia.withSampleData()),
               )
             },
           ),
