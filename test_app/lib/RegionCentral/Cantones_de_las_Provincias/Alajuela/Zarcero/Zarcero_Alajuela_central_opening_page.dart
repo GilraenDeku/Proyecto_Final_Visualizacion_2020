@@ -81,7 +81,7 @@ class regionSocialEconomicaCentralZarceroAlajuela extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Tapesco', style: TextStyle(fontSize: 25),
+            title: Text('Tapezco', style: TextStyle(fontSize: 25),
             ),
             onTap: () => {
               Navigator.push(
