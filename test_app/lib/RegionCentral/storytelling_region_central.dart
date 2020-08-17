@@ -191,23 +191,90 @@ class regionCentralStorytelling extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'En la actualidad vivimos en un mundo en donde cada vez '
+                        'el uso de la tecnología se hace más indispensable, '
+                        'no solo para entretenernos sino también para '
+                        'comunicarnos, informarnos y trabajar, es por eso '
+                        'que es fundamental comprender el nivel de acceso '
+                        'que tiene a la tecnología: como lo es el radio, '
+                        'teléfonos, computadoras, televisores y el internet,'
+                        ' para así analizar la brecha tecnológica que '
+                        'existe y lograr crear proyectos que abarquen más'
+                        ' a la población',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En la provincia de San José se observa que el 84% de las '
+                        'casas cuentan con radio o equipos de sonido, el 65% con'
+                        ' línea de teléfono fija, 90% con teléfono celular, 26% '
+                        'con pantalla de televisor, de este 26% el 92% de los '
+                        'televisores son convencionales y el 58% son con cable o'
+                        ' satélite, el 41% tienen una computadora de escritorio,'
+                        ' 33% con una computadora portátil y el 43% de las casas'
+                        ' cuentan con acceso de internet.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En la provincia de Alajuela se observa que el 76% de las '
+                        'casas cuentan con radio o equipos de sonido, el 56% con'
+                        ' línea de teléfono fija, 87% con teléfono celular, 18% '
+                        'con pantalla de televisor, de este 18% el 90% de los '
+                        'televisores son convencionales y el 40% son con cable o'
+                        ' satélite, el 30% tienen una computadora de escritorio,'
+                        ' 24% con una computadora portátil y el 29% de las casas'
+                        ' cuentan con acceso de internet.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En la provincia de Cartago se observa que el 86% de las '
+                        'casas cuentan con radio o equipos de sonido, el 62% con'
+                        ' línea de teléfono fija, 90% con teléfono celular, 21% '
+                        'con pantalla de televisor, de este 21% el 94% de los '
+                        'televisores son convencionales y el 41% son con cable o'
+                        ' satélite, el 38% tienen una computadora de escritorio,'
+                        ' 27% con una computadora portátil y el 35% de las casas'
+                        ' cuentan con acceso de internet.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En la provincia de Heredia se observa que el 84% de las '
+                        'casas cuentan con radio o equipos de sonido, el 67% con'
+                        ' línea de teléfono fija, 91% con teléfono celular, 29% '
+                        'con pantalla de televisor, de este 29% el 91% de los '
+                        'televisores son convencionales y el 56% son con cable o'
+                        ' satélite, el 43% tienen una computadora de escritorio,'
+                        ' 37% con una computadora portátil y el 48% de las casas'
+                        ' cuentan con acceso de internet.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'Cabe destacar que, como en el caso de las pantallas'
+                        ' de televisor, varias de las casas cuentan con más'
+                        ' de un tipo de tecnología por lo cual los índices'
+                        ' son más altos. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, se puede observar que la provincia con '
+                        'mayor desarrollo tecnológico es Heredia. Esto se '
+                        'debe a que Heredia es una provincia que contiene la '
+                        'mayor concentración de zonas francas del país, '
+                        'haciendo así una alta demanda por tecnología. Cabe '
+                        'destacar que la provincia de Alajuela se encuentra en '
+                        'proceso de cremimiento tecnológico por sus múltiples'
+                        ' proyectos industriales, como son las zonas francas',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
@@ -238,60 +305,7 @@ class regionCentralStorytelling extends StatelessWidget {
                   buttonSection,
                   breveResenaSection,
                   chartSection,
-                  FlatButton(
-                    onPressed: () {
-                      showGeneralDialog(
-                          context: context,
-                          barrierDismissible: true,
-                          barrierLabel: MaterialLocalizations.of(context)
-                              .modalBarrierDismissLabel,
-                          barrierColor: Colors.black45,
-                          transitionDuration: const Duration(milliseconds: 500),
-                          pageBuilder: (BuildContext buildContext,
-                              Animation animation,
-                              Animation secondaryAnimation) {
-                            return Center(
-                              child: Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: MediaQuery.of(context).size.height,
-                                padding: EdgeInsets.all(20),
-                                color: Colors.white,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Image.asset(
-                                      'assets/regionCentralGrafico.jpg',
-                                      width: 400,
-                                      height: 360,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          });
-                    },
-                    textColor: Colors.black,
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: <Color>[
-                            Color(0xFFD16BA5),
-                            Color(0xFF86A8E7),
-                            Color(0xFF5FFBF1),
-                          ],
-                        ),
-                      ),
-                      padding: const EdgeInsets.all(10.0),
-                      child:
-                      const Text('Ver Información del Gráfico', style: TextStyle(fontSize: 20)),
-                    ),
-                  ),
                   interpretacionCodigo,
-
-
                 ],
               ),
             )));
