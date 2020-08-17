@@ -91,7 +91,7 @@ class regionSocialEconomicaCentralValverdeVegaAlajuela extends StatelessWidget {
 
           ListTile(
             leading: Icon(FontAwesomeIcons.trello),
-            title: Text('Gráfico del Cantón', style: TextStyle(fontSize: 25),
+            title: Text('StoryTelling del Cantón', style: TextStyle(fontSize: 25),
             ),
             onTap: () => {
               Navigator.push(
