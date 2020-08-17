@@ -147,30 +147,59 @@ class storytellingSalitralSantaAnaSanJose extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                /*
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'En la actualidad vivimos en un mundo en donde cada vez'
+                        ' el uso de la tecnología se hace más indispensable, '
+                        'no solo para entretenernos sino también para '
+                        'comunicarnos, informarnos y trabajar, es por eso que'
+                        ' es fundamental comprender el nivel de acceso que '
+                        'tiene a la tecnología: como lo es el radio, '
+                        'teléfonos, computadoras, Televisores y el internet, '
+                        'para así analizar la brecha tecnológica que existe '
+                        'y lograr crear proyectos que abarquen más a la '
+                        'población.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En el distrito de Salitral se observa que el 80% de las '
+                        'casas cuentan con radio o equipos de sonido, el 52% '
+                        'con línea de teléfono fija, 90% con teléfono celular,'
+                        ' 19% con pantalla de televisor, de este 19% el 89% de '
+                        'los televisores son convencionales y el 65% son con '
+                        'cable o satélite, el 30% tienen una computadora de '
+                        'escritorio, 23% con una computadora portátil y el 31% '
+                        'de las casas cuentan con acceso de internet.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
-
-                 */
+                SizedBox(height: 20),
+                Text(
+                    'Cabe destacar que, como en el caso de las pantallas de '
+                        'televisor, varias de las casas cuentan con más de '
+                        'un tipo de tecnología por lo cual los índices son '
+                        'tan altos. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, se puede observar que la tecnología que '
+                        'más utiliza la población son los teléfonos '
+                        'celulares los cuales van en un aumento considerable.'
+                        ' A pesar de que los celulares son los que más utiliza'
+                        ' la población, no se recomienda enfocarse solo a esta'
+                        ' tecnología ya que los índices de uso de las demás '
+                        'tecnologías son muy altos, lo que indica que en el '
+                        'distrito de Salitral, el '
+                        'uso de las tecnologías es '
+                        'bastante grande, excepto en las pantallas de'
+                        ' televisión ya que se encuentran menores de 20% '
+                        'de disponibilidad de posesión en la población.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
               ],
             ),
           ),
@@ -221,9 +250,7 @@ class storytellingSalitralSantaAnaSanJose extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/SantaBarbaraCanton.png',
-                                      width: 450,
-                                      height: 400,
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
