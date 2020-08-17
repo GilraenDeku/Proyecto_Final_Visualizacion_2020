@@ -9,6 +9,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/Barva/Barva_Barva_Heredia_Storytelling.dart';
+import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/Barva_Heredia_StoryTelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/San_Jos%C3%A9_de_la_Monta%C3%B1a/San_Jose_de_la_Montana_Barva_Heredia_Storytelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/San_Pablo/San_Pablo_Barva_Heredia_Storytelling.dart';
 import 'package:testapp/RegionCentral/Cantones_de_las_Provincias/Heredia/Barva/San_Pedro/San_Pedro_Barva_Heredia_Storytelling.dart';
@@ -108,7 +109,7 @@ class regionSocialEconomicaCentralBarvaHeredia extends StatelessWidget {
             onTap: () => {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => storytellingHeredia.withSampleData()),
+                MaterialPageRoute(builder: (context) => storytellingBarvaHeredia.withSampleData()),
               )
             },
           ),
