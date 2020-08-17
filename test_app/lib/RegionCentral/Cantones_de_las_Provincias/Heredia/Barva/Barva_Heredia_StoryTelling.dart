@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-class storytellingBelenHeredia extends StatelessWidget {
+class storytellingBarvaHeredia extends StatelessWidget {
   List<charts.Series> seriesList;
   final bool animate;
 
-  storytellingBelenHeredia(this.seriesList, {this.animate});
+  storytellingBarvaHeredia(this.seriesList, {this.animate});
 
   /// Creates a [BarChart] with sample data and no transition.
-  factory storytellingBelenHeredia.withSampleData() {
-    return new storytellingBelenHeredia(
+  factory storytellingBarvaHeredia.withSampleData() {
+    return new storytellingBarvaHeredia(
       _createSampleData(),
       // Disable animations for image tests.
       animate: true,
