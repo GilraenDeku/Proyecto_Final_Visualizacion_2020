@@ -196,30 +196,55 @@ class storytellingSanIsidroHeredia extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                /*
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'En la actualidad vivimos en un mundo en donde cada vez '
+                        'el uso de la tecnología se hace más indispensable, '
+                        'no solo para entretenernos sino también para '
+                        'comunicarnos, informarnos y trabajar, es por eso '
+                        'que es fundamental comprender el nivel de acceso '
+                        'que tiene a la tecnología: como lo es el radio, '
+                        'teléfonos, computadoras, televisores y el internet,'
+                        ' para así analizar la brecha tecnológica que '
+                        'existe y lograr crear proyectos que abarquen más'
+                        ' a la población',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En el cantón de San Isidro se observa que el 88% de las '
+                        'casas cuentan con radio o equipos de sonido, el 71% con'
+                        ' línea de teléfono fija, 92% con teléfono celular, 29%'
+                        ' con pantalla de televisor, de este 29% el 92% de los '
+                        'televisores son convencionales y el 53% son con cable '
+                        'o satélite, el 46% tienen una computadora de escritorio,'
+                        ' 36% con una computadora portátil y el 46% de las casas'
+                        ' cuentan con acceso de internet.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
-
-                 */
+                SizedBox(height: 20),
+                Text(
+                    'Cabe destacar que, como en el caso de las pantallas'
+                        ' de televisor, varias de las casas cuentan con más'
+                        ' de un tipo de tecnología por lo cual los índices'
+                        ' son más altos. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, se puede observar que la tecnología que más'
+                        ' utiliza la población son los teléfonos celulares los'
+                        ' cuales van en un aumento considerable. A pesar de que'
+                        ' los celulares son los que más utiliza la población, no'
+                        ' se recomienda enfocarse solo a esta tecnología ya que'
+                        ' los índices de uso de las demás tecnologías son muy '
+                        'altos, lo que indica que en el cantón de San Isidro el'
+                        ' uso de las tecnologías es bastante grande.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
               ],
             ),
           ),
@@ -271,9 +296,7 @@ class storytellingSanIsidroHeredia extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/BelenCanton.png',
-                                      width: 450,
-                                      height: 400,
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
@@ -426,11 +449,12 @@ class storytellingSanIsidroHeredia extends StatelessWidget {
             Icon(icon, color: color),
             onTap: () {
               // do what you need to do when "Click here" gets clicked
-              launch('https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source'
-                  '=web&cd=&cad=rja&uact=8&ved=2ahUKEwjj55_CzJnrAhXnxlkKHZ'
-                  'CPANcQFjAFegQIBhAB&url=https%3A%2F%2Fes.wikipedia.org%'
-                  '2Fwiki%2FCant%25C3%25B3n_de_San_Isidro&usg=AOvVaw1nxM'
-                  '7OleeDbBCx0kDcRnHO');
+              launch('https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source='
+                  'web&cd=&cad=rja&uact=8&ved=2ahUKEwigjfLN6qDrAhVM1lkKHbsSAn'
+                  'YQFjABegQIBBAB&url=https%3A%2F%2Fwww.hacienda.go.cr%2Fdoc'
+                  's%2F562e619a72bfb_Mapa%2520del%2520Canton%2520San%2520Isi'
+                  'dro%252006%2C%2520Distritos%252001%2520a%252004.pdf&usg'
+                  '=AOvVaw3S5wnuZO3-80EGQ8as3TRp');
             }
         ),
 
@@ -449,11 +473,12 @@ class storytellingSanIsidroHeredia extends StatelessWidget {
                 ),
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
-                  launch('https://www.google.com/url?sa=t&rct=j&q=&esrc'
-                      '=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjj55_'
-                      'CzJnrAhXnxlkKHZCPANcQFjAFegQIBhAB&url=https%3A%2F%'
-                      '2Fes.wikipedia.org%2Fwiki%2FCant%25C3%25B3n_de_San'
-                      '_Isidro&usg=AOvVaw1nxM7OleeDbBCx0kDcRnHO');
+                  launch('https://www.google.com/url?sa=t&rct=j&q=&esrc=s&'
+                      'source=web&cd=&cad=rja&uact=8&ved=2ahUKEwigjfLN6qDrA'
+                      'hVM1lkKHbsSAnYQFjABegQIBBAB&url=https%3A%2F%2Fwww.ha'
+                      'cienda.go.cr%2Fdocs%2F562e619a72bfb_Mapa%2520del%252'
+                      '0Canton%2520San%2520Isidro%252006%2C%2520Distritos%25'
+                      '2001%2520a%252004.pdf&usg=AOvVaw3S5wnuZO3-80EGQ8as3TRp');
                 }
             ),
           ),
