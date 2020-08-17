@@ -206,30 +206,52 @@ class storytellingSantaCruzTurrialbaCartago extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                /*
                 Text(
-                    'Las regiones socioeconómicas de Costa Rica '
-                        '(a menudo denominadas sólo como regiones funcionales) '
-                        'son una subdivisión político-económica en la que '
-                        'se ha delimitado este país centroamericano. Esta subdivisión '
-                        'fue realizada por Decreto Ejecutivo Nº 7944 '
-                        'del 26 de enero de 1978.',
+                    'En la actualidad vivimos en un mundo en donde cada vez '
+                        'el uso de la tecnología se hace más indispensable, '
+                        'no solo para entretenernos sino también para '
+                        'comunicarnos, informarnos y trabajar, es por eso '
+                        'que es fundamental comprender el nivel de acceso '
+                        'que tiene a la tecnología: como lo es el radio, '
+                        'teléfonos, computadoras, televisores y el internet,'
+                        ' para así analizar la brecha tecnológica que '
+                        'existe y lograr crear proyectos que abarquen más'
+                        ' a la población',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
                 SizedBox(height: 20),
                 Text(
-                    'Estas regiones son seis en total: Región Central, '
-                        'Región Chorotega, Región Pacífico Central, '
-                        'Región Brunca, Región Huetar Atlántica y '
-                        'Región Huetar Norte. Algunos nombres de '
-                        'región se derivan de las etnias precolombinas '
-                        'que habitaron en esas zonas geográficas. ',
+                    'En el distrito de Santa Cruz se observa que el 81% de las '
+                        'casas cuentan con radio o equipos de sonido, el 57% con'
+                        ' línea de teléfono fija, 82% con teléfono celular, 10%'
+                        ' con pantalla de televisor, de este 10% el 93% de los '
+                        'televisores son convencionales y el 15% son con cable '
+                        'o satélite, el 24% tienen una computadora de escritorio,'
+                        ' 14% con una computadora portátil y el 14% de las casas'
+                        ' cuentan con acceso de internet.',
                     softWrap: true,
                     style: TextStyle(fontSize: 18),
                     textAlign: TextAlign.justify),
-
-                 */
+                SizedBox(height: 20),
+                Text(
+                    'Cabe destacar que, como en el caso de las pantallas'
+                        ' de televisor, varias de las casas cuentan con más'
+                        ' de un tipo de tecnología por lo cual los índices'
+                        ' son más altos. ',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
+                SizedBox(height: 20),
+                Text(
+                    'En conclusión, en el caso de este distrito el uso de '
+                        'tecnologías es muy reducido constando así '
+                        'mayoritariamente del uso de radios o equipos de sonido'
+                        ' y telefonía celular, fija y computadora portátil '
+                        'siendo el teléfono celular la tecnología de mayor uso.',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 18),
+                    textAlign: TextAlign.justify),
               ],
             ),
           ),
@@ -280,9 +302,7 @@ class storytellingSantaCruzTurrialbaCartago extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/regionSocioeconomicaGrafrico.jpg',
-                                      width: 450,
-                                      height: 400,
+                                      'assets/InformacionGraficoSanJose.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ],
@@ -395,7 +415,7 @@ class storytellingSantaCruzTurrialbaCartago extends StatelessWidget {
             Icon(icon, color: color),
             onTap: () {
               // do what you need to do when "Click here" gets clicked
-              launch('https://www.hacienda.go.cr/docs/545cdd5ba073b_2.pdf');
+              launch('https://www.hacienda.go.cr/docs/545cdd5ca8e39_5.pdf');
             }
         ),
 
@@ -414,7 +434,7 @@ class storytellingSantaCruzTurrialbaCartago extends StatelessWidget {
                 ),
                 onTap: () {
                   // do what you need to do when "Click here" gets clicked
-                  launch('https://www.hacienda.go.cr/docs/545cdd5ba073b_2.pdf');
+                  launch('https://www.hacienda.go.cr/docs/545cdd5ca8e39_5.pdf');
                 }
             ),
           ),
